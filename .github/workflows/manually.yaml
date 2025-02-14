@@ -4,13 +4,13 @@ on:
   workflow_dispatch:
     inputs:
       name:
-        description: 'Person to greet'
+        description: 'Who dispatch workflow'
         required: true
-        default: 'Mona the Octocat'
+        default: 'Eden'
       home:
         description: 'location'
         required: false
-        default: 'The Octoverse'
+        default: 'Shenzhen'
 
 jobs:
   build:
