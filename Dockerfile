@@ -16,7 +16,8 @@ RUN apt-get update && \
 # 安装Python依赖到虚拟环境
 RUN python -m venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
-RUN pip install --no-cache-dir -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple/
+# RUN pip install --no-cache-dir -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple/
+RUN pip install --no-cache-dir -r requirements.txt
 
 # 第二阶段：生产镜像
 FROM python:3.10-slim
